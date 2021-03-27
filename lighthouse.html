@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lighthouse</title>
+    <link rel="stylesheet" href="lighthouse.css">
+    <script>
+      var r = document.querySelector(':root');
+      function changeColor1(){
+        r.style.setProperty('--light-color', '#f4a259 ');
+      }
+      function changeColor2(){
+        r.style.setProperty('--light-color', '#f4e285');
+      }
+      function changeColor3(){
+        r.style.setProperty('--light-color', '#8cb369');
+      }s
+      function changeColor4(){
+        r.style.setProperty('--light-color', '#d81159');
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Jeju Lighthouse</h2>
+    <div class="container">
+      <div class="lighthouse">
+        <div class="top"></div>
+      </div>
+      <div class="light"></div>
+    </div>
+
+    <div class="button">
+      <button class="color1" onClick="changeColor1()"></button>
+      <button class="color2" onClick="changeColor2()"></button>
+      <button class="color3" onClick="changeColor3()"></button>
+      <button class="color4" onClick="changeColor4()"></button>
+    </div>
+
+    <div class="explanation">
+      Place your mouse over the light.
+    </div>
+
+    <div class="exit">
+      <a href="topics.html">exit</a>
+    </div>
+
+  </body>
+</html>

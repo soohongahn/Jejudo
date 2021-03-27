@@ -1,0 +1,35 @@
+.thermometer{
+  width: 400px;
+  height: 10px;
+  margin: auto;
+
+  border-radius: 5%;
+  border: 3px solid #e5e5e5;
+}
+
+.thermometer:before{
+  content: '';
+  width: 20px;
+  height: 10px;
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+
+  animation-name: tempChange, colorChange;
+  animation-duration: 4.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+}
+
+@keyframes tempChange {
+  0%{width: 400px;}
+  33%{width: 300px;}
+  66%{width: 200px;}
+  100%{width: 50px;}
+}
+
+@keyframes colorChange {
+  0%{background-color: #b7094c;}
+  100%{background-color: #0091ad;}
+}

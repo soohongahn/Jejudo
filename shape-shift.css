@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
+
+.title1{
+  text-align: center;
+  margin: 3vh;
+  font-family: 'Jura', sans-serif;
+  color: #e5e5e5;
+  font-size: 4vh;
+  text-transform: uppercase;
+}
+
+.title2{
+  text-align: center;
+  margin: 10px;
+  font-family: 'Jura', sans-serif;
+  font-size: 3vh;
+  color: #e5e5e5;
+  text-transform: uppercase;
+}
+
+body{
+  background-color: #272640;
+}
+
+.container{
+  height: 400px;
+  width: 400px;
+  margin: auto;
+}
+
+#shape{
+  height: 50px;
+  width: 50px;
+  background: #faa307;
+  border-radius: 50%;
+
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+
+  animation-name: shift;
+  animation-duration: 4.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: cubic-bezier(.88,.01,.22,1);
+}
+
+@keyframes shift {
+  33%{border-radius: 50% 50% 50% 50%; background: #b9d6f2; height: 100px; width: 100px; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+  66%{border-radius: 0% 50% 50% 50%; background: #87bcde; height: 150px; width: 150px; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(45deg);}
+  100%{border-radius: 0% 0% 0% 0%;  background:#748cc2; height: 200px; width: 200px; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(90deg);}
+}
+
+.exit{
+  text-align: center;
+  position: absolute;
+  width: 10vh;
+  bottom: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid #e5e5e5;
+}
+
+.exit a{
+  font-size: 2.5vh;
+  text-decoration: none;
+  font-family: 'Jura', sans-serif;
+  color: #e5e5e5;
+}
+
+.exit:hover{
+  border-radius: 50% 0 50% 0;
+  transition: .5s;
+}

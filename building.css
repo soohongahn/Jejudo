@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+
+h2{
+  font-family: 'Train One', cursive;
+  color: #CFDBD5;
+  text-align: center;
+  margin: 5%;
+  font-size: 5vh;
+}
+
+body{
+  background-color: #242423;
+}
+
+.street{
+  margin: auto;
+  width: 30%;
+  height: 300px;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.street *{
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: #333533;
+
+  align-items: center;
+}
+
+#window{
+  width: 40%;
+  height: 30%;
+}
+
+.building1{
+  align-self: flex-end;
+  width: 20%;
+  height: 30%;
+}
+
+.building2{
+  align-self: flex-end;
+  width: 15%;
+  height: 100%;
+}
+
+.building3{
+  align-self: flex-end;
+  width: 17%;
+  height: 75%;
+}
+
+.building4{
+  align-self: flex-end;
+  width: 23%;
+  height: 30%;
+}
+
+.building5{
+  align-self: flex-end;
+  width: 19%;
+  height: 70%;
+}
+
+@keyframes blink {
+  0%{background-color: #656363;}
+  100%{box-shadow: 0 0 30px 10px #F5CB5C; background-color: #F5CB5C;}
+}
+
+.window1{
+  box-shadow: 0 0 30px 10px #F5CB5C;
+  background: #F5CB5C;
+}
+
+.window2{
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-duration: 1s;
+}
+
+.window3{
+  background-color: #656363;
+}
+
+.window4{
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-out;
+  animation-duration: 2.5s;
+}
+
+.window5{
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-duration: 5s;
+}
+
+.exit{
+  transition: .5s;
+  text-align: center;
+  position: absolute;
+  width: 10vh;
+  bottom: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid #CFDBD5;
+}
+
+.exit a{
+  font-size: 2.5vh;
+  text-decoration: none;
+  font-family: 'Train One';
+  color: #CFDBD5;
+}
+
+.exit:hover{
+  width: 14vh;
+  transition: .5s;
+}

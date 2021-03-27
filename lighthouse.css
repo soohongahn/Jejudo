@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+:root{
+  --time: 1s;
+  --light-color: rgba(255, 250, 223, 1);
+}
+
+h2{
+  text-align: center;
+  color: #f2e9e4;
+  font-size: 4vh;
+  margin: 5%;
+  font-family: 'Poiret One', cursive;
+}
+
+body{
+  background: #22223b;
+}
+
+.container{
+  width: 20%;
+  height: 50%;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.lighthouse{
+  width: 20%;
+  height: 80%;
+  background: #9a8c98;
+  position: absolute;
+  bottom: -5%;
+  left: 40%;
+  transform: translateX(-50%);
+  transform: perspective(600px) rotateX(50deg);
+}
+
+.top{
+  width: 140%;
+  height: 20%;
+  background: #9a8c98;
+  position: absolute;
+  left: -20%;
+}
+
+.light{
+  transition: 0.5s;
+  width: 2.5vh;
+  height: 2.5vh;
+  background: var(--light-color);
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button{
+  position: absolute;
+  width: 25%;
+  height: 4%;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: #4a4e69;
+
+  z-index: -10;
+}
+
+.button *{
+  position: relative;
+  border-radius: 10%;
+  width: 3vh;
+  height: 3vh;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.color1{
+  border: 3px solid #f4a259 ;
+  background-color: #f4a259 ;
+}
+
+.color2{
+  border: 3px solid #f4e285;
+  background-color: #f4e285;
+}
+
+.color3{
+  border: 3px solid #8cb369;
+  background-color: #8cb369;
+}
+.color4{
+  border: 3px solid #d81159;
+  background-color: #d81159;
+}
+
+.light:hover{
+  transition: var(--time, 1s);
+  width: 5vh;
+  height: 5vh;
+  box-shadow: 0px 0px 300px 200px var(--light-color);
+  background-color: var(--light-color);
+}
+
+.exit{
+  text-align: center;
+  position: absolute;
+  width: 10vh;
+  bottom: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.exit a{
+  text-decoration: none;
+  font-size: 3vh;
+  color: #f2e9e4;
+  font-family: 'Poiret One', cursive;
+}
+
+.exit a:hover{
+  color: var(--light-color);
+  transition: .5s;
+}
+
+.explanation{
+  text-align: center;
+  position: absolute;
+  width: 50vh;
+  bottom: 20vh;
+  left: 50%;
+
+  font-size: 3vh;
+  color: #f2e9e4;
+  font-family: 'Poiret One', cursive;
+  transform: translateX(-50%);
+}

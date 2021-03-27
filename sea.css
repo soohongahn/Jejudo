@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body{
+  background: #f8f4e3;
+}
+
+h2{
+  text-align: center;
+  font-size: 8vh;
+  color: #222122;
+  font-family: 'Lobster', cursive;
+  margin: 10%;
+}
+
+.container{
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(#edd4bc, #fff1e6);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sun{
+  width: 50px;
+  height: 50px;
+  background: #ff6d00;
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+}
+
+.wave1{
+  width: 200%;
+  height: 400%;
+  border-radius:45%;
+  background: #83c9f4;
+
+  position: absolute;
+  top: 50%;
+  left: -50%;
+
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+}
+
+.wave2{
+  width: 150%;
+  height: 300%;
+  border-radius:45%;
+  background: #a3d5ff;
+
+  position: absolute;
+  top: 55%;
+  left: -30%;
+
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+}
+
+.wave3{
+  width: 140%;
+  height: 280%;
+  border-radius:45%;
+  background: #d9f0ff;
+
+  position: absolute;
+  top: 65%;
+  left: -20%;
+
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-duration: 5.5s;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  100%{transform: rotate(360deg);}
+}
+
+.exit{
+  text-align: center;
+  position: absolute;
+  width: 10vh;
+  bottom: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.exit a{
+  font-size: 3vh;
+  text-decoration: none;
+  color: #222122;
+  font-family: 'Lobster', cursive;
+}
+
+.exit a:hover{
+  color: #ff6d00;
+  transition: .5s;
+}
