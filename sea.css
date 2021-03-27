@@ -2,6 +2,7 @@
 
 body{
   background: #f8f4e3;
+  animation: colorchange-background 6s ease-in-out infinite alternate-reverse;
 }
 
 h2{
@@ -10,6 +11,7 @@ h2{
   color: #222122;
   font-family: 'Lobster', cursive;
   margin: 10%;
+  animation: colorchange-title 6s ease-in-out infinite alternate-reverse;
 }
 
 .container{
@@ -22,6 +24,7 @@ h2{
   background: linear-gradient(#edd4bc, #fff1e6);
   border-radius: 10px;
   overflow: hidden;
+  animation: colorchange-sky 6s linear infinite alternate-reverse;
 }
 
 .sun{
@@ -30,6 +33,34 @@ h2{
   background: #ff6d00;
   border-radius: 50%;
   position: absolute;
+  box-shadow: 0 0 20px 5px #ff6d00;
+  animation: rise 6s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes rise{
+  0%, 10%{top: 0%;}
+  100%{top: 100%; transform:translateY(-50%);}
+}
+
+@keyframes colorchange-background {
+  0%, 10%{background: #f8f4e3;}
+  70%, 100%{background: #000814;}
+}
+
+@keyframes colorchange-sky {
+  0%, 40%{background: #f8edeb;}
+  70%, 100%{background: #001d3d;}
+}
+
+@keyframes colorchange-title {
+  0%, 10%{color: #222122;}
+  70%, 100%{color: #f2e9e4;}
+}
+
+.sunrise{
+  position: absolute;
+  width: 50px;
+  height: 300px;
   top: 10%;
   left: 15%;
 }
@@ -101,6 +132,7 @@ h2{
   text-decoration: none;
   color: #222122;
   font-family: 'Lobster', cursive;
+  animation: colorchange-title 6s ease-in-out infinite alternate-reverse;
 }
 
 .exit a:hover{
