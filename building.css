@@ -1,127 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="building.css">
+    <title>Building Lights</title>
+  </head>
+  <body>
+    <h2>Central City Hotel</h2>
+    <div class="street">
+      <div id="building" class="building1">
+        <div id="window" class="window1" style="animation: blink 1s infinite alternate;"></div>
+        <div id="window" class="window1" style="animation: blink 4s infinite alternate;"></div>
+      </div>
+      <div id="building" class="building2">
+        <div id="window" class="window2"></div>
+        <div id="window" class="window2" style="animation: blink 8s infinite alternate;"></div>
+        <div id="window" class="window2" style="animation: blink 5s infinite alternate;"></div>
+        <div id="window" class="window2" style="animation: blink 1.2s infinite alternate;"></div>
+        <div id="window" class="window2"></div>
+        <div id="window" class="window2" style="animation: blink 8s infinite alternate;"></div>
+        <div id="window" class="window2"></div>
+        <div id="window" class="window2" style="animation: blink 9s infinite alternate;"></div>
+      </div>
+      <div id="building" class="building3">
+        <div id="window" class="window3" style="animation: blink 2s infinite alternate;"></div>
+        <div id="window" class="window3"></div>
+        <div id="window" class="window3" style="animation: blink 6s infinite alternate;"></div>
+      </div>
+      <div id="building" class="building4">
+        <div id="window" class="window4" style="animation: blink 3s infinite alternate;"></div>
+        <div id="window" class="window4" style="animation: blink 5s infinite alternate;"></div>
+        <div id="window" class="window4"></div>
+        <div id="window" class="window4"></div>
+        <div id="window" class="window4" style="animation: blink 6s infinite alternate;"></div>
+        <div id="window" class="window4" style="animation: blink 2s infinite alternate;"></div>
+      </div>
+      <div id="building" class="building5">
+        <div id="window" class="window5" style="animation: blink 6s infinite alternate;"></div>
+        <div id="window" class="window5" style="animation: blink 3s infinite alternate;"></div>
+        <div id="window" class="window5" style="animation: blink 4.4s infinite alternate;"></div>
+        <div id="window" class="window5"></div>
+        <div id="window" class="window5"></div>
+        <div id="window" class="window5" style="animation: blink 3.2s infinite alternate;"></div>
+      </div>
 
-h2{
-  font-family: 'Train One', cursive;
-  color: #CFDBD5;
-  text-align: center;
-  margin: 5%;
-  font-size: 5vh;
-}
+    </div>
 
-body{
-  background-color: #242423;
-}
+      <div class="exit">
+        <a href="topics.html">EXIT</a>
+      </div>
 
-.street{
-  margin: auto;
-  width: 30%;
-  height: 300px;
-
-  display: flex;
-  justify-content: space-around;
-}
-
-.street *{
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  background-color: #333533;
-
-  align-items: center;
-}
-
-#building{
-  display: grid;
-  align-self: flex-end;
-  justify-items: center;
-}
-
-#window{
-  border-radius: 10%;
-  background: #656363;
-}
-
-@keyframes blink {
-  0%{background-color: #656363;}
-  30%, 100%{box-shadow: 0 0 20px 8px #F5CB5C; background-color: #F5CB5C;}
-}
-
-.window1{
-  width: 1em;
-  height: 1em;
-}
-
-.window2{
-  width: .9em;
-  height: .9em;
-}
-
-.window3{
-  width: 6vh;
-  height: 1em;
-}
-
-.window4{
-  width: .8em;
-  height: .8em;
-}
-
-.window5{
-  width: 1em;
-  height: 1em;
-}
-
-.building1{
-  width: 20%;
-  height: 30%;
-  grid-template-columns: 1fr 1fr;
-}
-
-.building2{
-  width: 15%;
-  height: 100%;
-  grid-template-columns: 1fr 1fr;
-}
-
-.building3{
-  width: 17%;
-  height: 75%;
-}
-
-.building4{
-  width: 23%;
-  height: 30%;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-}
-
-.building5{
-  width: 19%;
-  height: 70%;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-
-.exit{
-  transition: .5s;
-  text-align: center;
-  position: absolute;
-  width: 10vh;
-  bottom: 10vh;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 2px solid #CFDBD5;
-}
-
-.exit a{
-  font-size: 2.5vh;
-  text-decoration: none;
-  font-family: 'Train One';
-  color: #CFDBD5;
-}
-
-.exit:hover{
-  width: 14vh;
-  transition: .5s;
-}
+  </body>
+</html>
