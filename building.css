@@ -31,75 +31,76 @@ body{
   align-items: center;
 }
 
+#building{
+  display: grid;
+  align-self: flex-end;
+  justify-items: center;
+}
+
 #window{
-  width: 40%;
-  height: 30%;
+  border-radius: 10%;
+  background: #656363;
+}
+
+@keyframes blink {
+  0%{background-color: #656363;}
+  30%, 100%{box-shadow: 0 0 20px 8px #F5CB5C; background-color: #F5CB5C;}
+}
+
+.window1{
+  width: 1em;
+  height: 1em;
+}
+
+.window2{
+  width: .9em;
+  height: .9em;
+}
+
+.window3{
+  width: 6vh;
+  height: 1em;
+}
+
+.window4{
+  width: .8em;
+  height: .8em;
+}
+
+.window5{
+  width: 1em;
+  height: 1em;
 }
 
 .building1{
-  align-self: flex-end;
   width: 20%;
   height: 30%;
+  grid-template-columns: 1fr 1fr;
 }
 
 .building2{
-  align-self: flex-end;
   width: 15%;
   height: 100%;
+  grid-template-columns: 1fr 1fr;
 }
 
 .building3{
-  align-self: flex-end;
   width: 17%;
   height: 75%;
 }
 
 .building4{
-  align-self: flex-end;
   width: 23%;
   height: 30%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .building5{
-  align-self: flex-end;
   width: 19%;
   height: 70%;
-}
-
-@keyframes blink {
-  0%{background-color: #656363;}
-  100%{box-shadow: 0 0 30px 10px #F5CB5C; background-color: #F5CB5C;}
-}
-
-.window1{
-  box-shadow: 0 0 30px 10px #F5CB5C;
-  background: #F5CB5C;
-}
-
-.window2{
-  animation-name: blink;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-  animation-duration: 1s;
-}
-
-.window3{
-  background-color: #656363;
-}
-
-.window4{
-  animation-name: blink;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-  animation-timing-function: ease-out;
-  animation-duration: 2.5s;
-}
-
-.window5{
-  animation-name: blink;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-  animation-duration: 5s;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .exit{
